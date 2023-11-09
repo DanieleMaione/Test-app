@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  width: 50%;
+  margin: auto;
 }
 
 .App-logo {
@@ -28,11 +30,72 @@
   color: #61dafb;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.main {
+  border-radius: 10px;
+  box-shadow: 0 0 40px 0 rgb(0 0 0 / 15%);
+}
+
+.container {
+  margin: 10;
+  display: flex;
+  justify-content: flex-end;
+}
+
+table {
+  border-radius: 10px;
+}
+
+.table th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.table th:last-child {
+  border-top-right-radius: 10px;
+}
+
+.table th {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.4;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 40px;
+  padding-right: 10px;
+}
+
+.table td {
+  font-size: 15px;
+  color: gray;
+  line-height: 1.4;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 40px;
+  padding-right: 10px;
+}
+
+.modal-header {
+  background-color: black;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+    /* text-align: center; */
+    width: 90%;
+    margin: auto;
   }
 }
